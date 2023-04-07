@@ -1,0 +1,23 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 26,
+        "patch": 2
+    },
+    "configurePresets": [
+        {
+            "name": "clang16-linux-debug",
+            "displayName": "Clang 16 Linux",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/cmake/toolchains/clang16-linux.cmake",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            },
+            "warnings": {
+                "dev": false
+            }
+        }
+    ]
+}
